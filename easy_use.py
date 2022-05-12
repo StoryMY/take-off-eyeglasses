@@ -52,7 +52,7 @@ def generate_results(args, device):
 
     # transform
     transform = transforms.Compose([
-        transforms.Resize(args.img_size),
+        transforms.Resize([args.img_size, args.img_size]),
         transforms.ToTensor(),
         transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])
     ])
@@ -61,7 +61,7 @@ def generate_results(args, device):
     img_list = os.listdir(args.input_dir)
     with torch.no_grad():
         for img_name in img_list:
-            img = Image.open(os.path.join(args.input_dir, img_name))
+            img = Image.open(os.path.join(args.input_dir, img_name)).convert('RGB')
             img = transform(img)
             img = torch.unsqueeze(img, 0)
             img = img.to(device)
