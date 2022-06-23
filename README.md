@@ -35,9 +35,10 @@ To get the label of shadow segmentation:
 
 If our paper helps your research, please cite it in your publications:
 
-	@article{lyu2022portrait,
+	@inproceedings{lyu2022portrait,
 	  title={Portrait Eyeglasses and Shadow Removal by Leveraging 3D Synthetic Data},
 	  author={Lyu, Junfeng and Wang, Zhibo and Xu, Feng},
-	  journal={arXiv preprint arXiv:2203.10474},
+	  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+	  pages={3429--3439},
 	  year={2022}
 	}
