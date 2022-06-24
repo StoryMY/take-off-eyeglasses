@@ -4,15 +4,13 @@ Official pytorch implementation of paper "Portrait Eyeglasses and Shadow Removal
 
 <div><img src="./img/img.jpg" width="40%"></div>
 
-## Quick Usage
 
 :rocket: **Run model through Replicate's web demo here**:
 
 [Demo and Docker image on Replicate](https://replicate.com/storymy/take-off-eyeglasses)
+<a href="https://replicate.com/storymy/take-off-eyeglasses"><img src="https://replicate.com/storymy/take-off-eyeglasses/badge"></a>
 
-<a href="https://replicate.com/storymy/take-off-eyeglasses"><img src="https://replicate.com/storymy/take-off-eyeglasses/badge">
-
-
+## Quick Usage
 Download the pretrained model from [here](https://drive.google.com/file/d/1Ea8Swdajz2J5VOkaXIw_-pVJk9EWYrpx/view?usp=sharing), and put it in the "ckpt" directory. Then run the following script:
 
 	python easy_use.py
